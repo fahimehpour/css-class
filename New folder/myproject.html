@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+	<style>
+			*{
+			box-sizing:border-box; 
+			padding:0px;
+			margin:0px;
+			}
+			body{
+			padding-top:60px;
+            background-color:#BA311D;
+			}
+			#top-nav{
+				position:fixed;				
+				top:0;
+				left:o;
+				height:60px;
+				width:100%;
+				background-color:#666;	
+			} 
+			.dropdown-menu ul li{
+				list-style:none;
+				height:60px;	
+				float:right;
+				width:100px; 
+				border-left:1px solid #999;
+				text-align:center;
+				color: #FFF;
+				font-size:18px;
+				position:relative;
+			}
+			.dropdown-menu ul li a {
+				text-decoration:none;
+				display:block;
+				height:100%;
+				color: #FFF;
+				padding-top:17px;
+				cursor:pointer;
+			}
+			.dropdown-menu ul li a:hover{
+				background-color:#CCC;
+			}
+			.dropdown-menu ul li ul{
+				display:none;
+				position:absolute;
+				top:60px;
+				border:1px solid #999;
+				background-color:#666;	
+			}
+			.dropdown-menu ul li:hover ul{
+				display:block;
+			}
+			.dropdown-menu ul li ul li:hover{
+				background-color:#CCC;
+			}
+			#container{
+				margin-left:auto;
+				margin-right:auto;
+				overflow:outo;
+				width:1000px;
+			}
+			/*header*/
+			#header{
+				overflow:outo;
+				width:100%;
+			}
+			#header div:nth-child(1),#header div:nth-child(2){
+				font-family:tahooma;
+				font-size:36px;
+				color:#000;
+				height:100px;
+				width:50%;
+				float:left;
+				borde:1px solid #0F3
+				}
+			#header span{
+				color: #000;
+			}
+			
+			#header div:nth-child(3) a img{ 
+				clear:both;
+				height:293px;
+				width:896px;
+				float:left;
+			}
+				/*left-side*/
+				
+			 #left-side{
+				height:700px;
+				width:75%;
+				background-color:#FFF;
+				float:left; 
+			  }
+			  /*right-side*/
+			  #right-side{
+				  height:700px;
+				  width:25%;
+				  background-color:#FFF;
+				  float:left;
+				  direction:rtl;  
+				  }
+			  #right-side nav ul{
+				  margin:0 auto; 
+				  height:100%;
+				  border:3px solid #269926 
+			 }   
+			  #right-side nav ul li{
+				  height:67px;
+				  list-style:none;
+				  border-bottom:3px solid #269926;
+				  font-size:24px;
+			  }
+			 #right-side nav ul li a{
+				 text-decoration:none;
+				 cursor:pointer;
+				 height:100%;
+				 display:block;
+				 padding-right:30px;
+				 padding-top:10px;
+				 color:#FF8040;
+			 }
+			#right-side nav ul li a:hover{
+				background-color:#269926;
+			}
+			#list{
+				height:30px !important;
+				font-size:18px;
+				color: #FF8040;
+				background-color:#269926;
+				text-align:center;
+			}
+		     /*footer*/
+			 #footer{
+				clear:both;
+				height:100px;
+				width:1000px;;
+				background-color:#000;			
+			}
+	</style>;
+
+<body>
+	<nav>
+		<div id="top-nav" class="dropdown-menu">
+     		<ul>
+        		<li><a>صفحه اصلی</a>
+            	</li>
+            	<li><a>درباره ما</a>
+            	</li>
+            	<li>
+            		<a>تماس با ما
+            			<ul>
+                			<li>فروشگاه1</li>
+                    		<li>فروشگاه2</li>
+                		</ul>
+                	</a>
+            	</li>
+    		</ul>
+    	</div>
+	</nav>
+    <div id="container">
+        <div>        	
+        <div id="header">
+        	<div >الکتروذغال<span> پوربرقی
+        	</div>
+			<div >Electerozoghal<span> pourbarghi
+        	</div>
+
+           <div>	
+                <a href="#">
+                	<img src="images/mega.jpg">
+            	</a>
+            </div>
+        </div>
+        <div id="left-side">
+        </div>
+        <div id="right-side">
+        	<nav>
+                <ul>
+                    <li id="list">لیست محصولات</li>
+                    <li><a href="#">ذغال</a></li>
+                    <li><a href="#">استارت</a></li>
+                    <li><a href="#">دینام</a></li>
+                    <li><a href="#">ارمیچر استارت</a></li>
+                    <li><a href="#">جای ذغالی استارت</a></li>
+                    <li><a href="#">دنده استارت</a></li>
+                    <li><a href="#">اتوماتیک استارت</a></li>
+                    <li><a href="#">رله</a></li>
+                    <li><a href="#">آفتامات دینام</a></li>
+                    <li><a href="#">دیود دینام</a></li>
+                </ul>
+          </nav>
+	</div>
+        <div id="footer">
+        </div>
+</div>
+</body>
+</html>
